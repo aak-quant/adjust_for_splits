@@ -1,4 +1,4 @@
-My Python code to correct data for splits events.
+My Python code to correct stocks prices and volumes for splits events.
 The main part of the code is the function called adjust_for_splits_final to adjust prices and volumes by splits for individual stocks.
 The function takes three inputs:
   1) df1 - the dataframe with dates, stock ids, prices and volumes
