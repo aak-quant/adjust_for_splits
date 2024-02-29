@@ -73,5 +73,5 @@ print("overall time", time.time() - start, "\n")
 df_new["pricingDate"] = pd.to_datetime(df_new["pricingDate"])
 
 ## Check for AAPL:
-df_new.loc[(df_new["tradingItemId"] == 2590360) & (df_new["pricingDate"] >= "2014-06-03") & (df_new["pricingDate"] <= "2014-06-13")]
+print(df_new.loc[(df_new["tradingItemId"] == 2590360) & (df_new["pricingDate"] >= "2014-06-03") & (df_new["pricingDate"] <= "2014-06-13")])
 
