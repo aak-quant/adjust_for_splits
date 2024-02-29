@@ -56,9 +56,13 @@ def adjust_for_splits_final(df1, df2, asofdate):
    return df
 
 #define working directory
-os.chdir("/Users/alexanderkarpikov/Documents/adjust_for_splits/")
-df1 = pd.read_csv("daily_price_volume.zip")
+#os.chdir("/Users/alexanderkarpikov/Documents/adjust_for_splits/")
+#df1 = pd.read_csv("daily_price_volume.zip")
+df_part1 = pd.read_csv("daily_price_volume_part1.zip")
+df_part2 = pd.read_csv("daily_price_volume_part2.zip")
+df1 = pd.concat([df_part1, df_part2],ignore_index=True)
 df2 = pd.read_csv("daily_splitinfo.zip")
+
 
 asofdate = "2019-03-31"
 
